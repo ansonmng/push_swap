@@ -6,7 +6,7 @@
 /*   By: nansonm <ansonmng@gmail.com>               +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/03/14 12:29:30 by nansonm           #+#    #+#             */
-/*   Updated: 2022/03/18 15:59:15 by nansonm          ###   ########.fr       */
+/*   Updated: 2022/04/07 16:48:23 by nansonm          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -19,7 +19,6 @@
 int	is_valid(char **string);
 int	is_sorted(t_list *stack);
 int	handling_argv(char ***string, char **argv, char *chr);
-//static int	is_int(char *string);
 
 /* instructions.c */
 void	run(char *cmd, t_list **stack_1, t_list **stack_2, int x);
@@ -31,6 +30,7 @@ void	sort(t_list **stack);
 int	stack_min(t_list *stack);
 int	stack_max(t_list *stack);
 int	min(int a, int b);
+int	ft_abs(int num);
 
 /* sort_big_utils.c */
 int	index_minmax(t_list *stack, int num);

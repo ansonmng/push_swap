@@ -6,19 +6,12 @@
 /*   By: nansonm <ansonmng@gmail.com>               +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/03/15 14:54:54 by nansonm           #+#    #+#             */
-/*   Updated: 2022/03/30 14:50:38 by nansonm          ###   ########.fr       */
+/*   Updated: 2022/04/07 16:47:11 by nansonm          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "push_swap.h"
 #include "libft/libft.h"
-
-static int	ft_abs(int num)
-{
-	if (num < 0)
-		num = num * -1;
-	return(num);
-}
 
 int	index_minmax(t_list *stack, int num)
 {
