@@ -1,4 +1,14 @@
-
+/* ************************************************************************** */
+/*                                                                            */
+/*                                                        :::      ::::::::   */
+/*   push_swap.c                                        :+:      :+:    :+:   */
+/*                                                    +:+ +:+         +:+     */
+/*   By: nansonm <ansonmng@gmail.com>               +#+  +:+       +#+        */
+/*                                                +#+#+#+#+#+   +#+           */
+/*   Created: 2022/04/07 17:07:24 by nansonm           #+#    #+#             */
+/*   Updated: 2022/04/07 17:07:25 by nansonm          ###   ########.fr       */
+/*                                                                            */
+/* ************************************************************************** */
 #include "push_swap.h"
 #include <stdlib.h>
 #include <stdio.h>
@@ -15,9 +25,9 @@ static void	ps_free(char **string)
 
 int	main(int argc, char **argv)
 {
-	int	len;
-	char **str;
-	t_list *stack;
+	int		len;
+	char	**str;
+	t_list	*stack;
 
 	if (argc > 1)
 	{
@@ -37,6 +47,5 @@ int	main(int argc, char **argv)
 		ft_lstclear(&stack, free);
 		free(str);
 	}
-
 	return (0);
 }

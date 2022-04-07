@@ -1,3 +1,15 @@
+/* ************************************************************************** */
+/*                                                                            */
+/*                                                        :::      ::::::::   */
+/*   push_swap_utils.c                                  :+:      :+:    :+:   */
+/*                                                    +:+ +:+         +:+     */
+/*   By: nansonm <ansonmng@gmail.com>               +#+  +:+       +#+        */
+/*                                                +#+#+#+#+#+   +#+           */
+/*   Created: 2022/04/07 17:00:27 by nansonm           #+#    #+#             */
+/*   Updated: 2022/04/07 17:00:27 by nansonm          ###   ########.fr       */
+/*                                                                            */
+/* ************************************************************************** */
+
 #include <limits.h>
 #include <stdlib.h>
 #include <stdio.h>
@@ -6,12 +18,12 @@
 static int	is_int(char *string)
 {
 	int	i;
-	
+
 	i = 0;
 	if (string[i] == '+' || string[i] == '-')
 		++i;
 	while (string[i])
-		if(!ft_isdigit(string[i++]))
+		if (!ft_isdigit(string[i++]))
 			return (0);
 	if (ft_atoi(string) < INT_MIN || ft_atoi(string) > INT_MAX)
 		return (0);
@@ -29,8 +41,8 @@ static int	has_duplicate(int *nums, int len)
 		j = i + 1;
 		while (j < len)
 		{
-			if(nums[i] == nums[j++])
-				return(1);
+			if (nums[i] == nums[j++])
+				return (1);
 		}
 		i ++;
 	}
@@ -39,12 +51,12 @@ static int	has_duplicate(int *nums, int len)
 
 int	handling_argv(char ***string, char **argv, char *chr)
 {
-	int	i;
+	int		i;
 	char	*tmp;
 	char	*str;
 
 	str = 0;
-	while(*argv)
+	while (*argv)
 	{
 		if (!str)
 			str = ft_strdup(*argv++);
@@ -100,4 +112,3 @@ int	is_sorted(t_list *stack)
 	}
 	return (1);
 }
-
